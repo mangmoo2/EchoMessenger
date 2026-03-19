@@ -32,6 +32,7 @@
             textBox1 = new TextBox();
             button1 = new Button();
             listBox1 = new ListBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -75,11 +76,22 @@
             listBox1.TabIndex = 3;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("맑은 고딕", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            label2.Location = new Point(42, 337);
+            label2.Name = "label2";
+            label2.Size = new Size(99, 25);
+            label2.TabIndex = 4;
+            label2.Text = "현재 대화:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(textBox1);
@@ -96,5 +108,6 @@
         private TextBox textBox1;
         private Button button1;
         private ListBox listBox1;
+        private Label label2;
     }
 }
