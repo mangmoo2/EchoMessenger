@@ -52,6 +52,7 @@
             textBox1.Size = new Size(519, 23);
             textBox1.TabIndex = 1;
             textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.KeyDown += textBox1_KeyDown;
             // 
             // button1
             // 
@@ -63,6 +64,7 @@
             button1.Text = "전송";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            button1.KeyDown += button1_KeyDown;
             // 
             // listBox1
             // 
